@@ -46,21 +46,12 @@ Outputs saved to:
 ## Project Structure
 ```
 autocomplete-takehome/
-├── harness.py                    # main completion loop + timing
-├── results_base.json             # base model, baseline (max_tokens=50)
-├── results_it.json               # IT model, baseline (max_tokens=50)
-├── results_base_gpu_split.json   # base model + n_gpu_layers=35
-├── results_it_gpu_split.json     # IT model + n_gpu_layers=35
-├── results_base_ctx1000.json     # base model + n_ctx=1000
-├── results_it_ctx1000.json       # IT model + n_ctx=1000
-├── results_base_token_red.json   # base model + max_tokens=20
-├── results_it_token_red.json     # IT model + max_tokens=20
-├── results_base_temp0.json       # base model, temperature=0.0
-├── results_it_temp0.json         # IT model, temperature=0.0
-├── results_base_temp0_3.json     # base model, temperature=0.3
-├── results_it_temp0_3.json       # IT model, temperature=0.3
-├── results_base_after_tune.json  # base model, final tuned config
-├── results_it_after_tune.json    # IT model, final tuned config
-├── writeup.md                    # answers to 5 questions
-└── README.md                     # this file
+├── harness.py
+├── results/
+│   ├── results_base.json
+│   ├── results_it.json
+│   ├── results_base_gpu_split.json
+│   ├── ... (all other jsons)
+├── writeup.md
+└── README.md
 ```
