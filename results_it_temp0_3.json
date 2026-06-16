@@ -1,0 +1,56 @@
+{
+  "model_path": "/Users/daphnelu/.cache/huggingface/hub/models--ggml-org--gemma-4-E2B-it-GGUF/snapshots/a1dac71d3ab220618f5a7573a52acdc4baf3ae3b/gemma-4-E2B-it-Q8_0.gguf",
+  "load_time_seconds": 2.2856,
+  "step_size": 40,
+  "max_tokens": 20,
+  "results": [
+    {
+      "prefix_length_chars": 40,
+      "prefix_tail": "\nHi Professor Marshall,\nI hope the move ",
+      "completion": "\nis going well.\n\nI hope the move is going well.\n\nI hope the move is",
+      "latency_seconds": 0.3713,
+      "prompt_tokens": 12,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 80,
+      "prefix_tail": "to the new office went smoothly.\n\nI may ",
+      "completion": "\n",
+      "latency_seconds": 0.0711,
+      "prompt_tokens": 22,
+      "completion_tokens": 1
+    },
+    {
+      "prefix_length_chars": 120,
+      "prefix_tail": "be traveling with my family next week, s",
+      "completion": "ometime around the 15th. I wanted to check if you might have any availability for a",
+      "latency_seconds": 0.3459,
+      "prompt_tokens": 30,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 160,
+      "prefix_tail": "o scheduling a time to come by could be ",
+      "completion": "10/25 or later. Please let me know what works best for you.\n\nBest",
+      "latency_seconds": 0.4504,
+      "prompt_tokens": 39,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 200,
+      "prefix_tail": "a bit difficult. \nI remember you had men",
+      "completion": "ial tasks that needed attention.\n\nPlease let me know what time works best for you to meet.",
+      "latency_seconds": 0.3514,
+      "prompt_tokens": 49,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 240,
+      "prefix_tail": "tioned the possibility of mailing the bo",
+      "completion": "ond paper. Please let me know if that's still an option.\n\nThank you for your",
+      "latency_seconds": 0.3465,
+      "prompt_tokens": 55,
+      "completion_tokens": 20
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "model_path": "/Users/daphnelu/.cache/huggingface/hub/models--mradermacher--gemma-4-E2B-GGUF/snapshots/3762686d74ff8db6c98f8d3c389f56fbdf994d5a/gemma-4-E2B.Q4_K_M.gguf",
+  "load_time_seconds": 1.8437,
+  "step_size": 40,
+  "max_tokens": 20,
+  "results": [
+    {
+      "prefix_length_chars": 40,
+      "prefix_tail": "\nHi Professor Marshall,\nI hope the move ",
+      "completion": "2016 is going well. I am writing to you to ask you a question. I",
+      "latency_seconds": 0.331,
+      "prompt_tokens": 12,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 80,
+      "prefix_tail": "to the new office went smoothly.\n\nI may ",
+      "completion": "<i>not</i> be able to make it to the meeting tomorrow, but I will try to make it",
+      "latency_seconds": 0.2918,
+      "prompt_tokens": 22,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 120,
+      "prefix_tail": "be traveling with my family next week, s",
+      "completion": " I will not be able to attend the meeting.\n\nI am looking forward to seeing you again soon",
+      "latency_seconds": 0.2918,
+      "prompt_tokens": 30,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 160,
+      "prefix_tail": "o scheduling a time to come by could be ",
+      "completion": "\ndifficult.  I will let you know when I am back in town.\n\nThanks,\n",
+      "latency_seconds": 0.2953,
+      "prompt_tokens": 39,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 200,
+      "prefix_tail": "a bit difficult. \nI remember you had men",
+      "completion": " working on the house when I was there last.  I hope they didn't damage anything.",
+      "latency_seconds": 0.2968,
+      "prompt_tokens": 49,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 240,
+      "prefix_tail": "tioned the possibility of mailing the bo",
+      "completion": "ad to me.\nI would like to see the boat before I make a decision.\nI",
+      "latency_seconds": 0.2985,
+      "prompt_tokens": 55,
+      "completion_tokens": 20
+    }
+  ]
+}

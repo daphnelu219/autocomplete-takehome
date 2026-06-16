@@ -1,0 +1,56 @@
+{
+  "model_path": "/Users/daphnelu/.cache/huggingface/hub/models--mradermacher--gemma-4-E2B-GGUF/snapshots/3762686d74ff8db6c98f8d3c389f56fbdf994d5a/gemma-4-E2B.Q4_K_M.gguf",
+  "load_time_seconds": 0.9819,
+  "step_size": 40,
+  "max_tokens": 20,
+  "results": [
+    {
+      "prefix_length_chars": 40,
+      "prefix_tail": "\nHi Professor Marshall,\nI hope the move ",
+      "completion": "6 is going well.\n\nI am not sure whether you are aware that the GMAT is changing",
+      "latency_seconds": 0.3633,
+      "prompt_tokens": 12,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 80,
+      "prefix_tail": "to the new office went smoothly.\n\nI may ",
+      "completion": "<em>have</em> to come to one of your seminars sometime to show you how to use my new program",
+      "latency_seconds": 0.3288,
+      "prompt_tokens": 22,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 120,
+      "prefix_tail": "be traveling with my family next week, s",
+      "completion": " we are going to\nvisit some museums in the city. I hope it will be an interesting\n",
+      "latency_seconds": 0.3175,
+      "prompt_tokens": 30,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 160,
+      "prefix_tail": "o scheduling a time to come by could be ",
+      "completion": "\ndifficult. If you have a moment and want to stop by, I can be there Monday morning",
+      "latency_seconds": 0.3423,
+      "prompt_tokens": 39,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 200,
+      "prefix_tail": "a bit difficult. \nI remember you had men",
+      "completion": " in your office who were working on the new building.\nI remember it was a busy day and",
+      "latency_seconds": 0.3279,
+      "prompt_tokens": 49,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 240,
+      "prefix_tail": "tioned the possibility of mailing the bo",
+      "completion": "ogie box to me.\n\nIf it is convenient for you, I would love to come by the",
+      "latency_seconds": 0.3062,
+      "prompt_tokens": 55,
+      "completion_tokens": 20
+    }
+  ]
+}

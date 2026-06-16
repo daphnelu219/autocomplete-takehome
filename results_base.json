@@ -1,0 +1,56 @@
+{
+  "model_path": "/Users/daphnelu/.cache/huggingface/hub/models--mradermacher--gemma-4-E2B-GGUF/snapshots/3762686d74ff8db6c98f8d3c389f56fbdf994d5a/gemma-4-E2B.Q4_K_M.gguf",
+  "load_time_seconds": 2.1805,
+  "step_size": 40,
+  "max_tokens": 50,
+  "results": [
+    {
+      "prefix_length_chars": 40,
+      "prefix_tail": "\nHi Professor Marshall,\nI hope the move ",
+      "completion": "6 is going well.\n\nI am not sure whether you are aware that the GMAT is changing the way they are scoring the GMAT.\n\nI just went to the GMAT site and there is a notice about the change.\n\nThis is",
+      "latency_seconds": 0.7391,
+      "prompt_tokens": 12,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 80,
+      "prefix_tail": "to the new office went smoothly.\n\nI may ",
+      "completion": "<em>have</em> to come to one of your seminars sometime to show you how to use my new program.\n\nPlease tell me what to tell my students when they ask for references.\nSincerely,\nMary\nDear Professor Marshall,\nI have been",
+      "latency_seconds": 0.7128,
+      "prompt_tokens": 22,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 120,
+      "prefix_tail": "be traveling with my family next week, s",
+      "completion": " we are going to\nvisit some museums in the city. I hope it will be an interesting\nexperience.\n\nI hope you are having a good time at your new job. I am going to\nvisit your office soon, as I have some",
+      "latency_seconds": 0.7002,
+      "prompt_tokens": 30,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 160,
+      "prefix_tail": "o scheduling a time to come by could be ",
+      "completion": "\ndifficult. If you have a moment and want to stop by, I can be there Monday morning \nbefore 8:00 and Thursday afternoon after 2:00. If not, I will be back in the office \n",
+      "latency_seconds": 0.7063,
+      "prompt_tokens": 39,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 200,
+      "prefix_tail": "a bit difficult. \nI remember you had men",
+      "completion": " in your office who were working on the new building.\nI remember it was a busy day and I was trying to get my work done.\nI felt sorry for them. They were trying their best to clean up the mess that they had created",
+      "latency_seconds": 0.7085,
+      "prompt_tokens": 49,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 240,
+      "prefix_tail": "tioned the possibility of mailing the bo",
+      "completion": "ogie box to me.\n\nIf it is convenient for you, I would love to come by the office this afternoon after I finish work.\n\nThank you for your prompt reply.\nPlease let me know your thoughts on the matter.\nThank you",
+      "latency_seconds": 0.8012,
+      "prompt_tokens": 55,
+      "completion_tokens": 50
+    }
+  ]
+}

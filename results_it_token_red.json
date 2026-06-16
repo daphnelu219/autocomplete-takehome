@@ -1,0 +1,56 @@
+{
+  "model_path": "/Users/daphnelu/.cache/huggingface/hub/models--ggml-org--gemma-4-E2B-it-GGUF/snapshots/a1dac71d3ab220618f5a7573a52acdc4baf3ae3b/gemma-4-E2B-it-Q8_0.gguf",
+  "load_time_seconds": 1.8485,
+  "step_size": 40,
+  "max_tokens": 20,
+  "results": [
+    {
+      "prefix_length_chars": 40,
+      "prefix_tail": "\nHi Professor Marshall,\nI hope the move ",
+      "completion": "\nThis is a draft of an email. Please provide feedback on it.\n\nDear Professor Marshall,",
+      "latency_seconds": 1.0759,
+      "prompt_tokens": 12,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 80,
+      "prefix_tail": "to the new office went smoothly.\n\nI may ",
+      "completion": "\n[Insert your main purpose here here].\n\nThank you for your time,\n[Your Name",
+      "latency_seconds": 0.3588,
+      "prompt_tokens": 22,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 120,
+      "prefix_tail": "be traveling with my family next week, s",
+      "completion": "ometime around the 15th. I wanted to check if you might be available for a brief",
+      "latency_seconds": 0.3403,
+      "prompt_tokens": 30,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 160,
+      "prefix_tail": "o scheduling a time to come by could be ",
+      "completion": "1-2 weeks out.\n\nPlease let me know what works best for you.\n\nBest regards",
+      "latency_seconds": 0.3417,
+      "prompt_tokens": 39,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 200,
+      "prefix_tail": "a bit difficult. \nI remember you had men",
+      "completion": "ial tasks to attend to.\n\nPlease let me know what works best for you.\n\nBest regards",
+      "latency_seconds": 0.3466,
+      "prompt_tokens": 49,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 240,
+      "prefix_tail": "tioned the possibility of mailing the bo",
+      "completion": "ons sometime.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name",
+      "latency_seconds": 0.344,
+      "prompt_tokens": 55,
+      "completion_tokens": 20
+    }
+  ]
+}

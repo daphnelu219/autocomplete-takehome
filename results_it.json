@@ -1,0 +1,56 @@
+{
+  "model_path": "/Users/daphnelu/.cache/huggingface/hub/models--ggml-org--gemma-4-E2B-it-GGUF/snapshots/a1dac71d3ab220618f5a7573a52acdc4baf3ae3b/gemma-4-E2B-it-Q8_0.gguf",
+  "load_time_seconds": 3.9754,
+  "step_size": 40,
+  "max_tokens": 50,
+  "results": [
+    {
+      "prefix_length_chars": 40,
+      "prefix_tail": "\nHi Professor Marshall,\nI hope the move ",
+      "completion": "\nThis is a draft of an email. Please provide feedback on it.\n\nDear Professor Marshall,\n\nI hope this email finds you well.\n\nI hope this email finds you well.\n\nI am writing to you today to [Insert your main",
+      "latency_seconds": 2.266,
+      "prompt_tokens": 12,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 80,
+      "prefix_tail": "to the new office went smoothly.\n\nI may ",
+      "completion": "\n[Insert your main purpose here here].\n\nThank you for your time,\n[Your Name]\n\n**Here are a few options for what you might insert, depending on your relationship and purpose:**\n\n**Option 1: For a quick",
+      "latency_seconds": 0.8673,
+      "prompt_tokens": 22,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 120,
+      "prefix_tail": "be traveling with my family next week, s",
+      "completion": "ometime around the 15th. I wanted to check if you might be available for a brief meeting sometime during that time, if your schedule allows.\n\nPlease let me know what might work best for you.\n\nBest regards,\n\n[Your",
+      "latency_seconds": 0.7956,
+      "prompt_tokens": 30,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 160,
+      "prefix_tail": "o scheduling a time to come by could be ",
+      "completion": "1-2 weeks out.\n\nPlease let me know what works best for you.\n\nBest regards,\n\n[Your Name]\n\nThis is a polite and professional email. Here are a few minor suggestions to consider, depending on your goals:\n\n",
+      "latency_seconds": 0.7932,
+      "prompt_tokens": 39,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 200,
+      "prefix_tail": "a bit difficult. \nI remember you had men",
+      "completion": "ial tasks to attend to.\n\nPlease let me know what works best for you.\n\nBest regards,\n\n[Your Name]\n\n**Critique:**\n\nThis email is polite and polite but a critique. It is a good email, but it",
+      "latency_seconds": 0.8141,
+      "prompt_tokens": 49,
+      "completion_tokens": 50
+    },
+    {
+      "prefix_length_chars": 240,
+      "prefix_tail": "tioned the possibility of mailing the bo",
+      "completion": "ons sometime.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n\n**Analysis:**\n\nThis is a polite, professional email. Here is a breakdown of its strengths and potential areas for minor refinement.\n\n---",
+      "latency_seconds": 0.7952,
+      "prompt_tokens": 55,
+      "completion_tokens": 50
+    }
+  ]
+}

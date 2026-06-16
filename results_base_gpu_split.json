@@ -1,0 +1,56 @@
+{
+  "model_path": "/Users/daphnelu/.cache/huggingface/hub/models--mradermacher--gemma-4-E2B-GGUF/snapshots/3762686d74ff8db6c98f8d3c389f56fbdf994d5a/gemma-4-E2B.Q4_K_M.gguf",
+  "load_time_seconds": 1.0021,
+  "step_size": 40,
+  "max_tokens": 20,
+  "results": [
+    {
+      "prefix_length_chars": 40,
+      "prefix_tail": "\nHi Professor Marshall,\nI hope the move ",
+      "completion": "6 is going well.\n\nI am in the midst of a research project that is investigating the role",
+      "latency_seconds": 0.3082,
+      "prompt_tokens": 12,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 80,
+      "prefix_tail": "to the new office went smoothly.\n\nI may ",
+      "completion": "<em>have</em> to come to one of your seminars in person in the future.\nThe last time",
+      "latency_seconds": 0.2994,
+      "prompt_tokens": 22,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 120,
+      "prefix_tail": "be traveling with my family next week, s",
+      "completion": " o I will be unable to join the faculty meeting on the 17th, but I am",
+      "latency_seconds": 0.3002,
+      "prompt_tokens": 30,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 160,
+      "prefix_tail": "o scheduling a time to come by could be ",
+      "completion": "\ndifficult. If you have a moment and want to stop by, I am available this Wednesday at",
+      "latency_seconds": 0.3036,
+      "prompt_tokens": 39,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 200,
+      "prefix_tail": "a bit difficult. \nI remember you had men",
+      "completion": " who worked in the office, did you have any trouble finding someone to show me around the new space",
+      "latency_seconds": 0.3026,
+      "prompt_tokens": 49,
+      "completion_tokens": 20
+    },
+    {
+      "prefix_length_chars": 240,
+      "prefix_tail": "tioned the possibility of mailing the bo",
+      "completion": "ad of directors a copy of the proposal to review before the board meeting. Will you be able to",
+      "latency_seconds": 0.3017,
+      "prompt_tokens": 55,
+      "completion_tokens": 20
+    }
+  ]
+}
