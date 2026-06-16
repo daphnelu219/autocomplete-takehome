@@ -67,12 +67,12 @@ def run_harness(model_path, passage, step_size=40, max_tokens=20):
 if __name__ == "__main__":
     # Run base model
     base_output = run_harness(MODEL_PATH, PASSAGE, step_size=40)
-    with open("results_base_after_tune.json", "w") as f:
+    with open("results/results_base_after_tune.json", "w") as f:
         json.dump(base_output, f, indent=2)
     print(f"\nSaved {len(base_output['results'])} base model results")
 
     # Run IT model
     it_output = run_harness(IT_MODEL_PATH, PASSAGE, step_size=40)
-    with open("results_it_after_tune.json", "w") as f:
+    with open("results/results_it_after_tune.json", "w") as f:
         json.dump(it_output, f, indent=2)
     print(f"\nSaved {len(it_output['results'])} IT model results")
