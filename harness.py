@@ -1,9 +1,11 @@
 from llama_cpp import Llama
 import time
 import json
+import argparse
 
 IT_MODEL_PATH = "/Users/daphnelu/.cache/huggingface/hub/models--ggml-org--gemma-4-E2B-it-GGUF/snapshots/a1dac71d3ab220618f5a7573a52acdc4baf3ae3b/gemma-4-E2B-it-Q8_0.gguf"
 MODEL_PATH = "/Users/daphnelu/.cache/huggingface/hub/models--mradermacher--gemma-4-E2B-GGUF/snapshots/3762686d74ff8db6c98f8d3c389f56fbdf994d5a/gemma-4-E2B.Q4_K_M.gguf"
+
 # Representative passage - a short email
 PASSAGE = """
 Hi Professor Marshall,
@@ -65,14 +67,21 @@ def run_harness(model_path, passage, step_size=40, max_tokens=20):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Local autocomplete harness")
+    parser.add_argument("--base-model", default=MODEL_PATH, help="Path to base model GGUF")
+    parser.add_argument("--it-model", default=IT_MODEL_PATH, help="Path to IT model GGUF")
+    parser.add_argument("--step-size", type=int, default=40, help="Character step size")
+    parser.add_argument("--max-tokens", type=int, default=20, help="Max tokens per completion")
+    args = parser.parse_args()
+
     # Run base model
-    base_output = run_harness(MODEL_PATH, PASSAGE, step_size=40)
+    base_output = run_harness(args.base_model, PASSAGE, args.step_size, args.max_tokens)
     with open("results/results_base_after_tune.json", "w") as f:
         json.dump(base_output, f, indent=2)
     print(f"\nSaved {len(base_output['results'])} base model results")
 
     # Run IT model
-    it_output = run_harness(IT_MODEL_PATH, PASSAGE, step_size=40)
+    it_output = run_harness(args.it_model, PASSAGE, args.step_size, args.max_tokens)
     with open("results/results_it_after_tune.json", "w") as f:
         json.dump(it_output, f, indent=2)
     print(f"\nSaved {len(it_output['results'])} IT model results")
