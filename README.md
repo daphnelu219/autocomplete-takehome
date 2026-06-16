@@ -24,24 +24,21 @@ llama-cli -hf mradermacher/gemma-4-E2B-GGUF --prompt "test"
 llama-cli -hf ggml-org/gemma-4-E2B-it-GGUF --prompt "test"
 ```
 
-### 3. Update model paths in `harness.py`
-```python
-MODEL_PATH = "/path/to/gemma-4-E2B.Q4_K_M.gguf"
-IT_MODEL_PATH = "/path/to/gemma-4-E2B-it-Q8_0.gguf"
-```
-Find your cached paths with:
+### 3. Find your model paths
 ```bash
 find ~/.cache/huggingface -name "*.gguf"
 ```
 
 ### 4. Run the harness
 ```bash
-/opt/anaconda3/bin/python harness.py
+python harness.py \
+  --base-model /path/to/gemma-4-E2B.Q4_K_M.gguf \
+  --it-model /path/to/gemma-4-E2B-it-Q8_0.gguf
 ```
 
 Outputs saved to:
-- `results_base.json` — base model results
-- `results_it.json` — instruction-tuned model results
+- `results/results_base_after_tune.json` — base model results
+- `results/results_it_after_tune.json` — instruction-tuned model results
 
 ## Project Structure
 ```
