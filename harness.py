@@ -13,14 +13,14 @@ I may be traveling with my family next week, so scheduling a time to come by cou
 I remember you had mentioned the possibility of mailing the book
 """
 
-def run_harness(model_path, passage, step_size=40, max_tokens=20):
+def run_harness(model_path, passage, step_size=40, max_tokens=20, n_gpu_layers=35):
     """
     Walk through the passage, generating a completion at each step_size
     character interval. Returns a list of results with timing info.
     """
     print(f"Loading model: {model_path}")
     load_start = time.time()
-    llm = Llama(model_path=model_path, verbose=False, n_gpu_layers=35, n_ctx=1000)
+    llm = Llama(model_path=model_path, verbose=False, n_gpu_layers=n_gpu_layers, n_ctx=1000)
     load_time = time.time() - load_start
     print(f"Model loaded in {load_time:.3f}s\n")
 
@@ -70,18 +70,19 @@ if __name__ == "__main__":
     parser.add_argument("--it-model", required=True, help="Path to IT model GGUF")
     parser.add_argument("--step-size", type=int, default=40, help="Character step size")
     parser.add_argument("--max-tokens", type=int, default=20, help="Max tokens per completion")
+    parser.add_argument("--n-gpu-layers", type=int, default=35, help="Number of layers to offload to GPU")
     args = parser.parse_args()
 
     os.makedirs("results", exist_ok=True)
 
     # Run base model
-    base_output = run_harness(args.base_model, PASSAGE, args.step_size, args.max_tokens)
+    base_output = run_harness(args.base_model, PASSAGE, args.step_size, args.max_tokens, args.n_gpu_layers)
     with open("results/results_base_after_tune.json", "w") as f:
         json.dump(base_output, f, indent=2)
     print(f"\nSaved {len(base_output['results'])} base model results")
 
     # Run IT model
-    it_output = run_harness(args.it_model, PASSAGE, args.step_size, args.max_tokens)
+    it_output = run_harness(args.it_model, PASSAGE, args.step_size, args.max_tokens, args.n_gpu_layers)
     with open("results/results_it_after_tune.json", "w") as f:
         json.dump(it_output, f, indent=2)
     print(f"\nSaved {len(it_output['results'])} IT model results")
