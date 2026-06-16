@@ -2,9 +2,7 @@ from llama_cpp import Llama
 import time
 import json
 import argparse
-
-IT_MODEL_PATH = "/Users/daphnelu/.cache/huggingface/hub/models--ggml-org--gemma-4-E2B-it-GGUF/snapshots/a1dac71d3ab220618f5a7573a52acdc4baf3ae3b/gemma-4-E2B-it-Q8_0.gguf"
-MODEL_PATH = "/Users/daphnelu/.cache/huggingface/hub/models--mradermacher--gemma-4-E2B-GGUF/snapshots/3762686d74ff8db6c98f8d3c389f56fbdf994d5a/gemma-4-E2B.Q4_K_M.gguf"
+import os
 
 # Representative passage - a short email
 PASSAGE = """
@@ -68,11 +66,13 @@ def run_harness(model_path, passage, step_size=40, max_tokens=20):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Local autocomplete harness")
-    parser.add_argument("--base-model", default=MODEL_PATH, help="Path to base model GGUF")
-    parser.add_argument("--it-model", default=IT_MODEL_PATH, help="Path to IT model GGUF")
+    parser.add_argument("--base-model", required=True, help="Path to base model GGUF")
+    parser.add_argument("--it-model", required=True, help="Path to IT model GGUF")
     parser.add_argument("--step-size", type=int, default=40, help="Character step size")
     parser.add_argument("--max-tokens", type=int, default=20, help="Max tokens per completion")
     args = parser.parse_args()
+
+    os.makedirs("results", exist_ok=True)
 
     # Run base model
     base_output = run_harness(args.base_model, PASSAGE, args.step_size, args.max_tokens)
