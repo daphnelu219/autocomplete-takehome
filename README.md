@@ -36,6 +36,11 @@ python harness.py \
   --it-model /path/to/gemma-4-E2B-it-Q8_0.gguf
 ```
 
+Optional arguments:
+- --step-size — character interval between completions (default: 40)
+- --max-tokens — max tokens to generate per completion (default: 20)
+- --n-gpu-layers — layers to offload to GPU, set 0 for CPU only (default: 35)
+
 Outputs saved to:
 - `results/results_base_after_tune.json` — base model results
 - `results/results_it_after_tune.json` — instruction-tuned model results
